@@ -1,3 +1,3 @@
 # miscelaneos
 
-A new Flutter project.
+Proyecto nivel intermedio Flutter. Uso del Hardware del móvil.
