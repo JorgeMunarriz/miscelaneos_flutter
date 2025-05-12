@@ -16,6 +16,7 @@ final menuItems = <MenuItem>[
 
   MenuItem('Bola Giróscopo', Icons.sports_baseball_outlined, '/gyroscope-ball'),
   MenuItem('Brújula', Icons.explore, '/compass'),
+  MenuItem('Pokemons', Icons.catching_pokemon_outlined, '/pokemons'),
 ];
 
 class MainMenu extends StatelessWidget {
@@ -57,7 +58,7 @@ class HomeMenuItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ()=> context.push(route),
+      onTap: () => context.push(route),
       child: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
