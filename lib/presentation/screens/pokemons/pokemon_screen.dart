@@ -24,7 +24,8 @@ class _PokemonView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String pokemonDeepLinkingUrl = Environment.pokemonDeepLinking;
+    final String host = Environment.pokemonDeepLinking;
+    final Uri pokemonUri = Uri.https(host, '/pokemons/${pokemon.id}/');
 
     return Scaffold(
       appBar: AppBar(
@@ -35,10 +36,7 @@ class _PokemonView extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              SharePlugin.shareLink(
-                '${pokemonDeepLinkingUrl}pokemons/${pokemon.id}',
-                'Mire este pokémon',
-              );
+              SharePlugin.shareLink(pokemonUri, 'Mire este pokémon');
             },
             icon: Icon(Icons.share_outlined),
           ),

@@ -29,6 +29,19 @@ final router = GoRouter(
       builder: (context, state) => const CompassScreen(),
     ),
     GoRoute(
+      path: '/biometrics',
+      builder: (context, state) => const BiometricsScreen(),
+    ),
+    GoRoute(path: '/maps', builder: (context, state) => const MapScreen()),
+    GoRoute(
+      path: '/location',
+      builder: (context, state) => const LocationScreen(),
+    ),
+    GoRoute(
+      path: '/controlmap',
+      builder: (context, state) => const ControlledMapScreen(),
+    ),
+    GoRoute(
       path: '/pokemons',
       builder: (context, state) => const PokemonsScreen(),
       routes: [
