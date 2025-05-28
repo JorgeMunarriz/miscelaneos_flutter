@@ -27,10 +27,10 @@ class _MapView extends StatefulWidget {
   const _MapView({required this.initialLat, required this.initialLong});
 
   @override
-  State<_MapView> createState() => __MapViewState();
+  State<_MapView> createState() => _MapViewState();
 }
 
-class __MapViewState extends State<_MapView> {
+class _MapViewState extends State<_MapView> {
   @override
   Widget build(BuildContext context) {
     return GoogleMap(

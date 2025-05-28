@@ -1,6 +1,6 @@
 export 'biometrics/biometrics_screen.dart';
 export 'home/home_screen.dart';
-export 'maps/control_screen.dart';
+export 'maps/controlled_map_screen.dart';
 export 'maps/location_screen.dart';
 export 'maps/map_screen.dart';
 export 'permissions/ask_location_permission_screen.dart';
