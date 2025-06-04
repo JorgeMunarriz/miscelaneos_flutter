@@ -13,14 +13,16 @@ final menuItems = <MenuItem>[
   MenuItem('Giroscopio', Icons.downloading, '/gyroscope'),
   MenuItem('Acelerómetro', Icons.speed, '/accelerometer'),
   MenuItem('Magnetometro', Icons.explore_outlined, '/magnetometer'),
-
   MenuItem('Bola Giróscopo', Icons.sports_baseball_outlined, '/gyroscope-ball'),
   MenuItem('Brújula', Icons.explore, '/compass'),
   MenuItem('Pokemons', Icons.catching_pokemon_outlined, '/pokemons'),
   MenuItem('Biometricos', Icons.fingerprint, '/biometrics'),
   MenuItem('Ubicación', Icons.pin_drop, '/location'),
   MenuItem('Mapas', Icons.map_outlined, '/maps'),
+  MenuItem('Badge', Icons.notification_important, '/badge'),
   MenuItem('Controlado', Icons.gamepad_outlined, '/controlmap'),
+  MenuItem('Ad full', Icons.ad_units_rounded, '/ad-fullscreen'),
+  MenuItem('Ad recompensas', Icons.fort_rounded, '/ad-rewarded'),
 ];
 
 class MainMenu extends StatelessWidget {
@@ -81,6 +83,7 @@ class HomeMenuItem extends StatelessWidget {
             Text(
               title,
               textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,
               style: const TextStyle(color: Colors.white),
             ),
           ],

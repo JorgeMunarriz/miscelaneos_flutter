@@ -7,6 +7,9 @@ import 'lib_barrel.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  QuickActionsPlugin.registerActions();
+  await FlutterLocalNotifications.init();
+
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   await dotenv.load(fileName: '.env');
   runApp(const ProviderScope(child: MainApp()));
